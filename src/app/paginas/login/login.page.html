@@ -1,0 +1,47 @@
+<ion-content>
+<br>
+<br>
+<ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Open_Source_Initiative_keyhole.svg/1200px-Open_Source_Initiative_keyhole.svg.png "
+  style="height: 150px;"></ion-img>
+  <h1 class="ion-text-center">Bienvenidos</h1>
+  <form [formGroup]="loginForm">
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">Username</ion-label>
+        <ion-input type="text" formControlName="username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input type="password" formControlName="password"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>Recuerdame</ion-label>
+          <ion-toggle slot="end"></ion-toggle>
+      </ion-item>
+        <ion-button expand="full" (click)="login() ">ingresar</ion-button>
+    </ion-list>
+  </form>
+<!-- <form [formGroup]="loginForm">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-label position="stacked">Username</ion-label>
+          <ion-input type="text" formControlName="username"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-label position="stacked">Password</ion-label>
+          <ion-input type="password" formControlName="password" ></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="login()">ingresar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</form> -->
+
+
+</ion-content>
